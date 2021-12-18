@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgFile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewOverlay"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size0"
+        android:alpha="0.2"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgIconSelect"
+        android:layout_width="@dimen/size30"
+        android:layout_height="@dimen/size30"
+        android:layout_margin="@dimen/size8"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/ic_baseline_check_circle_outline"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imgFile"
+        app:layout_constraintTop_toTopOf="@+id/imgFile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

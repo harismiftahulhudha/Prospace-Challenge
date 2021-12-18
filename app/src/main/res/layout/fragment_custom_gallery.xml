@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvvm.views.fragments.CustomGalleryFragment">
+
+    <Spinner
+        android:id="@+id/spinnerFolder"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+        android:padding="@dimen/size8"
+        android:popupBackground="@android:color/white"
+        android:popupElevation="@dimen/size3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFiles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

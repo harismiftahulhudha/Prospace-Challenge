@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/machinesFragment">
+
+    <fragment
+        android:id="@+id/machinesFragment"
+        android:name="co.harismiftahulhudha.prospacetest.mvvm.views.fragments.MachinesFragment"
+        android:label="fragment_machines"
+        tools:layout="@layout/fragment_machines" >
+        <action
+            android:id="@+id/action_machinesFragment_to_machineDetailsFragment"
+            app:destination="@id/machineDetailsFragment" />
+        <action
+            android:id="@+id/action_machinesFragment_to_createOrEditFragment"
+            app:destination="@id/createOrEditFragment" />
+        <action
+            android:id="@+id/action_machinesFragment_to_barcodeScannerFragment"
+            app:destination="@id/barcodeScannerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/machineDetailsFragment"
+        android:name="co.harismiftahulhudha.prospacetest.mvvm.views.fragments.MachineDetailsFragment"
+        android:label="fragment_machine_details"
+        tools:layout="@layout/fragment_machine_details" >
+        <argument
+            android:name="machineDetails"
+            app:argType="co.harismiftahulhudha.prospacetest.mvvm.models.MachineModel" />
+        <action
+            android:id="@+id/action_machineDetailsFragment_to_detailImageFragment"
+            app:destination="@id/detailImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createOrEditFragment"
+        android:name="co.harismiftahulhudha.prospacetest.mvvm.views.fragments.CreateOrEditFragment"
+        android:label="fragment_create_or_edit"
+        tools:layout="@layout/fragment_create_or_edit" >
+        <argument
+            android:name="machineDetails"
+            app:argType="co.harismiftahulhudha.prospacetest.mvvm.models.MachineModel"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/customGalleryFragment"
+        android:name="co.harismiftahulhudha.prospacetest.mvvm.views.fragments.CustomGalleryFragment"
+        android:label="fragment_custom_gallery"
+        tools:layout="@layout/fragment_custom_gallery" >
+        <argument
+            android:name="machineDetails"
+            app:argType="co.harismiftahulhudha.prospacetest.mvvm.models.MachineModel" />
+    </fragment>
+    <action android:id="@+id/action_global_customGalleryFragment" app:destination="@id/customGalleryFragment" />
+    <fragment
+        android:id="@+id/detailImageFragment"
+        android:name="co.harismiftahulhudha.prospacetest.mvvm.views.fragments.DetailImageFragment"
+        android:label="fragment_detail_image"
+        tools:layout="@layout/fragment_detail_image" >
+        <argument
+            android:name="uri"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/barcodeScannerFragment"
+        android:name="co.harismiftahulhudha.prospacetest.mvvm.views.fragments.BarcodeScannerFragment"
+        android:label="fragment_barcode_scanner"
+        tools:layout="@layout/fragment_barcode_scanner" >
+        <action
+            android:id="@+id/action_barcodeScannerFragment_to_machineDetailsFragment"
+            app:destination="@id/machineDetailsFragment" />
+    </fragment>
+</navigation>

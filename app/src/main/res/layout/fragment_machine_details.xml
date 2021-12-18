@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvvm.views.fragments.MachineDetailsFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/size16">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:elevation="@dimen/size0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/machine_id"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/font12" />
+
+                <TextView
+                    android:id="@+id/txtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size12"
+                    android:text="@string/machine_name"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/font12" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size12"
+                    android:text="@string/machine_type"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/font12" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size12"
+                    android:text="@string/machine_qr_code_number"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/font12" />
+
+                <TextView
+                    android:id="@+id/txtQrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size12"
+                    android:text="@string/last_maintenance_date"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/font12" />
+
+                <TextView
+                    android:id="@+id/txtLastMaintanceDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size2"
+                    android:layout_marginBottom="@dimen/size16"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font14" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size12"
+                    android:layout_marginBottom="@dimen/size12"
+                    android:text="@string/images"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/font12" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

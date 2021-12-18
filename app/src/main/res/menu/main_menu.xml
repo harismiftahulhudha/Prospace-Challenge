@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionBarcode"
+        android:title="@string/barcode"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/ic_baseline_sort"
+        android:title="@string/sort"
+        app:showAsAction="always">
+
+        <menu>
+
+            <group
+                android:id="@+id/radioGroup"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/actionSortByName"
+                    android:checked="true"
+                    android:title="@string/sort_by_name" />
+                <item
+                    android:id="@+id/actionSortByType"
+                    android:title="@string/sort_by_type" />
+            </group>
+
+        </menu>
+
+    </item>
+</menu>

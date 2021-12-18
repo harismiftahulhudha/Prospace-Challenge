@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Image Machine</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash">Splash</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="save">Save</string>
+    <string name="icon">icon</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by_name">Sort By Name</string>
+    <string name="sort_by_type">Sort By Type</string>
+    <string name="qr_code_number">QR Code Number</string>
+    <string name="last_maintenance_date">Last Maintenance Date</string>
+    <string name="edit_machine">Edit Machine</string>
+    <string name="delete_machine">Delete Machine</string>
+    <string name="save_thumbnail">Save (%1$s)</string>
+    <string name="machine_id">Machine Id</string>
+    <string name="machine_type">Machine Type</string>
+    <string name="machine_name">Machine Name</string>
+    <string name="machine_qr_code_number">Machine QR Code Number</string>
+    <string name="images">Images</string>
+    <string name="machine_image">Machine Image</string>
+    <string name="qr_code_value">QR Code Value</string>
+    <string name="barcode">Barcode</string>
+</resources>
