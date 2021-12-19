@@ -23,7 +23,7 @@
 * [Variable Naming Format](#variable_naming_format)
 * [Library](#project_libraries)
 
-# <a name="project_directory_structure"></a>PROJECT DIRECTORY PROJECT
+# <a name="project_directory_structure"></a>PROJECT DIRECTORY STRUCTURE
 The following is a description of the function of each directory in this project.
 
 ## <a name="database_directory"></a>Database Directory
